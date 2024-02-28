@@ -426,7 +426,7 @@ nav .home, .about {
                                       /* mobile frame end */
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
     body {
         width: 768px;
         overflow-y: hidden;
@@ -594,7 +594,7 @@ nav .home, .about {
         z-index: 1;
         cursor: pointer;
         top: 5px;
-        right: 5px;
+        right: -115px;
         border-radius: 2px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -652,7 +652,7 @@ nav .home, .about {
     }
     
     input:checked ~ .slide {
-        transform: translateX(588px);
+        transform: translateX(375px);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         opacity: 1;
     }
