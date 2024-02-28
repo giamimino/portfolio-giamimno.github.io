@@ -422,15 +422,14 @@ nav .home, .about {
         transform: translateX(588px);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         opacity: 1;
-    }
-                                      /* mobile frame end */
+    } 
+                                     /* mobile frame end */
 }
 
 @media screen and (max-width: 425px) {
-    body {
-        width: 768px;
-        overflow-y: hidden;
-        height: 100%;
+    .slideicons {
+        display: none !important;
+        
     }
     
     header {
@@ -485,7 +484,7 @@ nav .home, .about {
         height: 50px;
         overflow: hidden;
         top: 220px;
-        right: 65px;
+        left: 187.5px;
         position: absolute;
         background-color: #fff;
         align-items: center;
@@ -514,14 +513,14 @@ nav .home, .about {
     
 
     .slide {
-        height: 100%;
-        width: 180px;
+        height: 280px;
+        width: 100%;
         position: absolute;
         background-color: #fff;
         transition: 0.5s ease;
-        transform: translateX(768px);
+        transform: translatey(-300px);
         opacity: 1;
-        opacity: 0;
+        opacity: 0; 
     }
 
     .dark-mode .slide {
@@ -537,8 +536,8 @@ nav .home, .about {
     h1 {
         color: #8000ff;
         font-weight: 800;
-        text-align: right;
-        padding: 10px 0;
+        text-align: center;
+        padding: 20px 0 5px 27px;
         padding-right: 30px;
         pointer-events: none;
     }
@@ -564,6 +563,7 @@ nav .home, .about {
         text-transform: capitalize;
         text-decoration: none;
         transition: 0.2s ease-out;
+        text-align: center;
     }
     
     ul li:hover a {
@@ -594,7 +594,7 @@ nav .home, .about {
         z-index: 1;
         cursor: pointer;
         top: 5px;
-        right: -115px;
+        right: 5px;
         border-radius: 2px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -652,7 +652,7 @@ nav .home, .about {
     }
     
     input:checked ~ .slide {
-        transform: translateX(375px);
+        transform: translateY(-50px);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         opacity: 1;
     }
