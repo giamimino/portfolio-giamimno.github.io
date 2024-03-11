@@ -7,6 +7,18 @@
     font-family: 'Poppins',sans-serif;
 }
 
+::-webkit-scrollbar {
+    background: transparent;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-dark-header);
+    height: 200px;
+    border-radius: 1rem;
+    transition: all 3s ease;
+}
+
 input {
     display: none;
 }
@@ -200,7 +212,67 @@ nav .home, .about {
     opacity: 0;
 }
 
+.slide {
+    transform: translateX(-1080px);
+}
 
+.label {
+    display: none;
+}
+
+.title-pj {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.wrapper-projects {
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-1 {
+    background-color: var(--clr-dark-header);
+    width: 400px;
+    height: 300px;
+    border: 2px solid var(--clr-dark-header);
+    border-radius: 16px;
+    transition: .3s ease;
+    z-index: 2;
+}
+
+
+.project-2 {
+    background-color: var(--clr-dark-header);
+    width: 400px;
+    height: 300px;
+    border: 2px solid var(--clr-dark-header);
+    border-radius: 16px;
+    transition: .3s ease;
+}
+
+.project-1:hover{
+    transform: scale(1.2);
+    margin-left: 100px;
+}
+
+.project-1:hover ~ .project-2 {
+    filter: blur(5px);
+    transform: scale(.9);
+}
+
+.project-2:hover{
+    transform: scale(1.2);
+    margin-right: 100px;
+}
+
+.project-2:hover ~ .project-1 {
+    filter: blur(5px);
+    transform: scale(.9);
+}
 
 @media screen and (max-width: 770px) {
     
