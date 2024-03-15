@@ -1,3 +1,7 @@
+export default function isprime() {
+    console.log('file sucesfully imported :)');
+}
+
 var themeToggleBtn = document.querySelector('.frame');
 var theme = localStorage.getItem('theme')
 var theme1 = localStorage.getItem('theme1')
@@ -69,4 +73,3 @@ slideThemeToggleBtn.addEventListener('click', function() {
     }
     
 });
-
